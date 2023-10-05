@@ -19,13 +19,13 @@ function _drawJumbles(){
 function _drawActiveJumble(){
     const jumble = AppState.activeJumble
     setHTML('activeJumble', jumble.activeJumbleCard)
-    console.log('drawing active Jumble', activeJumble)
+    // console.log('drawing active Jumble', activeJumble)
 }
 
 
 export class JumbleController{
     constructor(){
-        console.log('hi i exist now')
+        // console.log('hi i exist now')
         AppState.on('activeJumble', _drawActiveJumble)
         _drawJumbles()
         
